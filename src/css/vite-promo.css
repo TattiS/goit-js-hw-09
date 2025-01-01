@@ -98,3 +98,10 @@
 .main-page .menu-item-hidden {
   display: none;
 }
+
+.main-page .link-list {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  column-gap: 60px;
+}
