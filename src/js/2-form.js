@@ -26,6 +26,7 @@ const onFormElementInput = event => {
   const {
     target: { name: elementName, value: elementValue },
   } = event;
+
   formData[elementName] = elementValue.trim();
 
   localStorage.setItem(localStorageKey, JSON.stringify(formData));
@@ -41,7 +42,6 @@ const onFormSubmit = event => {
   formData = { email: '', message: '' };
   event.currentTarget.reset();
   localStorage.removeItem(localStorageKey);
-  console.log(formData);
 };
 
 form.addEventListener('input', onFormElementInput);

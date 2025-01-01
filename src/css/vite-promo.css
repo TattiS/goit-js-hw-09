@@ -3,7 +3,7 @@
 }
 .vite-promo-thumb {
   position: relative;
-  max-width: 320px;
+  max-width: 600px;
   margin: 0 auto;
 }
 .vite-promo-thumb::before {
@@ -93,4 +93,8 @@
   border: 1px solid transparent;
   border-radius: 1.25rem;
   transition: color 0.25s, border-color 0.25s, background-color 0.25s;
+}
+
+.main-page .menu-item-hidden {
+  display: none;
 }

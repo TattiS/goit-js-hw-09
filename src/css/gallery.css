@@ -1,0 +1,37 @@
+@import url('../../node_modules/simplelightbox/dist/simple-lightbox.css');
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+
+.gallery {
+  width: 1440px;
+  padding: 24px 156px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  background: #fff;
+}
+
+.gallery-item,
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  transition: transform 0.3s ease;
+}
+.gallery-item:hover,
+.gallery-image:hover {
+  transform: scale(1.04);
+}
+
+.sl-image {
+  width: 1112px;
+  height: 640px;
+}
