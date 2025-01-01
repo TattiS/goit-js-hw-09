@@ -8,6 +8,9 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+!node_modules/simplelightbox/dist/simple-lightbox.css
+!node_modules/simplelightbox/dist/simple-lightbox.min.css
+!node_modules/simplelightbox/src/simple-lightbox.scss
 dist
 dist-ssr
 *.local
