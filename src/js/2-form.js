@@ -4,14 +4,11 @@ let formData = { email: '', message: '' };
 
 const fillFormFromLS = () => {
   try {
-    if (!localStorage.length) {
+    const dataLS = JSON.parse(localStorage.getItem(localStorageKey));
+    if (dataLS === null) {
       return;
     }
-
-    const dataLS = JSON.parse(localStorage.getItem(localStorageKey));
-
     formData = dataLS;
-
     for (const key in dataLS) {
       form.elements[key].value = dataLS[key];
     }
@@ -26,7 +23,6 @@ const onFormElementInput = event => {
   const {
     target: { name: elementName, value: elementValue },
   } = event;
-
   formData[elementName] = elementValue.trim();
 
   localStorage.setItem(localStorageKey, JSON.stringify(formData));
